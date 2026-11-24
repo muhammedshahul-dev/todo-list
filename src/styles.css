@@ -19,3 +19,23 @@ body {
   min-height: 100vh;
   line-height: 1.55;
 }
+.header-tag{
+  font-size: larger;
+}
+header{
+  padding: 20px ;
+  border: #23332d 1px solid;
+  display: flex;
+  justify-content: center;
+  background-color: #e4e7d9;
+}
+.main{
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+.main-content{
+  border: #02130d 1px solid;
+}
+.sidebar{
+  border: #23332d 1px solid;
+}
