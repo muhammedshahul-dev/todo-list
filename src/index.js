@@ -1,8 +1,10 @@
-import "./styles.css"
-import { headerfn } from "./view/home/header.js";
-import { main } from "./view/home/main.js";
+// src/index.js
+import "./styles.css";
+import { AppController } from "./controller/app-controller.js";
 
-const app = document.getElementById('app')
+const appRoot = document.getElementById("app");
 
-app.appendChild(headerfn())
-app.appendChild(main())
+if (appRoot) {
+  const controller = new AppController(appRoot);
+  controller.init();
+}
